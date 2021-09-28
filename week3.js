@@ -12,19 +12,21 @@ function loopNum() {
 loopNum();
 
 //Part 2
-//Make empty array
-const numbers = [];
-//our index starts at 1;
-let i = 1;
-//makes sure while loop stops at 103
-while (i != 103) {
-  //Add by 2 to create an odd array
-  i += 2;
-  //Pushes i into our array through each loop
-  numbers.push(i);
+function odd103(){
+  //Make empty array
+  const numbers = [];
+  //our index starts at 1;
+  let i = 1;
+  //makes sure while loop stops at 103
+  while (i != 103) {
+    //Add by 2 to create an odd array
+    i += 2;
+    //Pushes i into our array through each loop
+    numbers.push(i);
+  }
+  //Prints the array
+  console.log(numbers);
 }
-//Prints the array
-console.log(numbers);
 
 //Part 3
 function arraySum(num) {
@@ -44,9 +46,11 @@ console.log(arraySum([1, 2, 3, 4, 5, 6]));
 //Part 4
 //Start loop at 9 and make sure to not reach below 0 using >=
 //We use i-- to descend from 9 to 0
-for (let i = 9; i >= 0; i--) {
-  //
-  console.log(i);
+function descend() {
+  for (let i = 9; i >= 0; i--) {
+    //
+    console.log(i);
+  }
 }
 
 //Part 5
