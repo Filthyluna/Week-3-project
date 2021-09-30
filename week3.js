@@ -57,7 +57,10 @@ function descend() {
 function factorial(n) {
   //Factorial starts at 1
   let factorial = 1;
-  //Loops through ascension so it starts from the given number and then ends at 1
+  if (n == 0) {
+    return n;
+  }
+  //Loops through descends so it starts from the given number and then ends at 1
   for (let i = n; i >= 1; i--) {
     //multiplies 1 by i
     factorial *= i;
